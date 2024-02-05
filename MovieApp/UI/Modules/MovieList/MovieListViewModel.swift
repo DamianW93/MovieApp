@@ -14,10 +14,10 @@ protocol MovieListDelegate: AnyObject {
 }
 
 final class MovieListViewModel: NSObject {
-    @Published private(set) var state: MovieListState = .loaded
-    @Published private(set) var itemIndexToUpdate: Int?
+    @Published var state: MovieListState = .loaded
+    @Published private(set)var itemIndexToUpdate: Int?
 
-    private(set) var movies: [MovieModel] = []
+    var movies: [MovieModel] = []
 
     private let moviesRepository: MoviesRepositoryProtocol
 

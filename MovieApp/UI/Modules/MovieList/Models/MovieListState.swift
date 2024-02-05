@@ -38,10 +38,14 @@ extension MovieListState {
         }
     }
 
-    var errorMessage: String? {
+    var informationalMessage: String? {
         switch self {
-        case .error(let errorMessage): return errorMessage
-        default: return nil
+        case .error(let error):
+            return error
+        case .empty:
+            return "There is no movies"
+        default:
+            return nil
         }
     }
 }

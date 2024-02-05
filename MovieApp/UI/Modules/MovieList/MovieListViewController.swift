@@ -34,7 +34,9 @@ class MovieListViewController: UIViewController {
         setup()
         bindViewModel()
 
-        viewModel.loadData()
+        if !isRunningUnitTests {
+            viewModel.loadData()
+        }
     }
 
     private func setup() {

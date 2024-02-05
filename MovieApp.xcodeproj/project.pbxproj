@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52FE99122B6D15CC00A3773F /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE99112B6D15CC00A3773F /* MovieAppUITests.swift */; };
-		52FE99142B6D15CC00A3773F /* MovieAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE99132B6D15CC00A3773F /* MovieAppUITestsLaunchTests.swift */; };
 		52FE992E2B6D186D00A3773F /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 52FE992D2B6D186D00A3773F /* InlineSnapshotTesting */; };
 		52FE99302B6D186D00A3773F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 52FE992F2B6D186D00A3773F /* SnapshotTesting */; };
 		52FE99332B6D188A00A3773F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 52FE99322B6D188A00A3773F /* Kingfisher */; };
@@ -77,6 +75,8 @@
 		52FE99E72B6D373B00A3773F /* MockMovieListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE99DA2B6D373B00A3773F /* MockMovieListDelegate.swift */; };
 		52FE99E82B6D373B00A3773F /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE99DF2B6D373B00A3773F /* MovieListViewModelTests.swift */; };
 		52FE99E92B6D373B00A3773F /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE99E22B6D373B00A3773F /* NetworkServiceTests.swift */; };
+		52FE9A032B6D51F100A3773F /* MovieListSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE9A022B6D51F100A3773F /* MovieListSnapshotTests.swift */; };
+		52FE9A052B703D8100A3773F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 52FE9A042B703D8100A3773F /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +100,6 @@
 		52FE98ED2B6D15CA00A3773F /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FE99032B6D15CC00A3773F /* MovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FE990D2B6D15CC00A3773F /* MovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52FE99112B6D15CC00A3773F /* MovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITests.swift; sourceTree = "<group>"; };
-		52FE99132B6D15CC00A3773F /* MovieAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52FE99422B6D1B1000A3773F /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		52FE99432B6D1B1000A3773F /* MovieListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCoordinator.swift; sourceTree = "<group>"; };
 		52FE99452B6D1B1000A3773F /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -165,6 +163,7 @@
 		52FE99DA2B6D373B00A3773F /* MockMovieListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMovieListDelegate.swift; sourceTree = "<group>"; };
 		52FE99DF2B6D373B00A3773F /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
 		52FE99E22B6D373B00A3773F /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		52FE9A022B6D51F100A3773F /* MovieListSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FE9A052B703D8100A3773F /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +245,6 @@
 		52FE99102B6D15CC00A3773F /* MovieAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				52FE99112B6D15CC00A3773F /* MovieAppUITests.swift */,
-				52FE99132B6D15CC00A3773F /* MovieAppUITestsLaunchTests.swift */,
 			);
 			path = MovieAppUITests;
 			sourceTree = "<group>";
@@ -620,6 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				52FE99DF2B6D373B00A3773F /* MovieListViewModelTests.swift */,
+				52FE9A022B6D51F100A3773F /* MovieListSnapshotTests.swift */,
 			);
 			path = MovieList;
 			sourceTree = "<group>";
@@ -681,6 +680,7 @@
 			);
 			name = MovieAppTests;
 			packageProductDependencies = (
+				52FE9A042B703D8100A3773F /* SnapshotTesting */,
 			);
 			productName = MovieAppTests;
 			productReference = 52FE99032B6D15CC00A3773F /* MovieAppTests.xctest */;
@@ -855,6 +855,7 @@
 				52FE99E42B6D373B00A3773F /* MockUrlSessionProtocol.swift in Sources */,
 				52FE99E52B6D373B00A3773F /* MockMovieModel.swift in Sources */,
 				52FE99E62B6D373B00A3773F /* MockMovieDataModel.swift in Sources */,
+				52FE9A032B6D51F100A3773F /* MovieListSnapshotTests.swift in Sources */,
 				52FE99E72B6D373B00A3773F /* MockMovieListDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -863,8 +864,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FE99142B6D15CC00A3773F /* MovieAppUITestsLaunchTests.swift in Sources */,
-				52FE99122B6D15CC00A3773F /* MovieAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,6 +1261,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52FE993A2B6D18DB00A3773F /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		52FE9A042B703D8100A3773F /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52FE992C2B6D186D00A3773F /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

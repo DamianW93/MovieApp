@@ -11,7 +11,7 @@ import UIKit
 final class MovieListViewLayout {
     let tableView = UITableView()
     let refreshControl = UIRefreshControl()
-    let errorLabel = UILabel()
+    let informationalLabel = UILabel()
 
     private let fullScreenLoading = UIActivityIndicatorView(style: .large)
 
@@ -25,8 +25,7 @@ final class MovieListViewLayout {
 
     func configureView(for state: MovieListState) {
         fullScreenLoading.isHidden = !state.showFullScreenLoading
-        errorLabel.text = state.errorMessage
-
+        informationalLabel.text = state.informationalMessage
 
         if state.shouldShowRefreshIndicator {
             refreshControl.beginRefreshing()
@@ -51,8 +50,8 @@ extension MovieListViewLayout {
         tableView.contentInset = .init(top: 16.0, left: 0, bottom: 16.0, right: 0)
         tableView.showsVerticalScrollIndicator = false
 
-        errorLabel.textAlignment = .center
-        errorLabel.numberOfLines = 0
+        informationalLabel.textAlignment = .center
+        informationalLabel.numberOfLines = 0
 
         fullScreenLoading.startAnimating()
 
@@ -64,7 +63,7 @@ extension MovieListViewLayout {
         tableView.addSubview(refreshControl)
 
         view.addSubview(fullScreenLoading)
-        view.addSubview(errorLabel)
+        view.addSubview(informationalLabel)
         view.addSubview(tableView)
     }
 
@@ -77,7 +76,7 @@ extension MovieListViewLayout {
             make.edges.equalToSuperview()
         }
 
-        errorLabel.snp.makeConstraints { make in
+        informationalLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(16.0)
         }
     }
