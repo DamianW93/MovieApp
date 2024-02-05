@@ -22,10 +22,6 @@ final class UserDefaultsService: UserDefaultsServiceProtocol {
     }
 
     func addMovieToFavorites(movieId: Int) {
-//        var mutableFavorites = favorites
-//
-//        mutableFavorites.append(movieId)
-
         favorites.append(movieId)
     }
 

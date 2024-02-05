@@ -38,8 +38,6 @@ final class AppCoordinator: BaseCoordinator {
     }
 
     private func openMovieListScreen() {
-//        navigationController.isNavigationBarHidden = true
-
         let movieListCoordinator = coordinatorsFactory.buildMovieListCoordinator(navigationController: navigationController)
 
         start(child: movieListCoordinator)
